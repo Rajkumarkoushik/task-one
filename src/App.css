@@ -1,38 +1,530 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body li {
+  list-style: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body h1{
+  font-weight: 700;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+body{
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+}
+body a{
+  text-decoration: none;
+  color: #fff;
+}
+.gap-25{
+  gap: 25px;
+}
+:root{
+  --color-1- : #03103d;
+  --color-2- : #0087ff;
+}
+/* Header section . */
+/* nav section starts. */
+.header{
+  background-image: url("../public/assets/banner-bg-1.png");
+  height: 100vh;
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    padding: 300px 0px 250px 0px;
+}
+.nav-links li a{
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.nav-links i{
+  background: #070a83;
+  padding: 20px;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+.nav-links{
+  padding: 10px 50px 10px 45px;
+  border-radius: 50px;
+  background-color: var(--color-1-);
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.home-form i{
+  right: 46px;
+  top: 43%;
 }
+.home-form{
+  background-color: #070a83;
+  padding: 30px;
+  border-radius: 4px;
+  width: 30%;
+  right: 10%;
+  position: fixed;
+  transition: all 0.4s;
+}
+.home-form input{
+  height: 40px;
+    width: 100%;
+    outline: none;
+    border-radius: 4px;
+    padding: 0px 20px;
+}
+.nav-hamburger{
+  display: none;
+}
+.nav-links li a:hover{
+  text-decoration: underline;
+  background-color: #fff;
+  color: var(--color-1-);
+  border-radius: 4px;
+}
+.head-icons{
+      text-align: inherit;
+    gap: 10px;
+    justify-content: end;
+    align-items: end;
+    flex-direction: column;
+}
+.side-sticky{
+  position: fixed;
+  left: 0;
+  top: 50%;
+  color: #fff;
+  background-color: #f70;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  z-index: +9999;
+}
+.side-sticky h6 a:hover{
+  text-decoration: underline;
+  color: #fff;
+}
+.side-sticky h6{
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.head-section p{
+  font-size: 20px;
+}
+.btn{
+  background: #35bf2e;
+  border: 1px solid green;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  margin-right: 15px;
+}
+.btn:hover{
+    background: green;
+    color: #fff;
+}
+.btn-login{
+  color: #fff;
+  background-color: transparent;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+.btn-login:hover{
+  background-color: #fff;
+  transition: .3s;
+  color: #3176c0;
+}
+/* nav section ends. */
+/* Header section . */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* 2. Footer section starts. */
+.footer-section{
+  background: -webkit-linear-gradient(-90deg, #03103d, #042864 100%);
+}
+.footer-address h6{
+  color: #fff;
+  padding-right: 15px;
+}
+.footer-icons{
+  gap: 10px;
+}
+.footer-icons i{
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+}
+.footer-images{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+}
+.copy-right{
+  background: #03103d;
+}
+.copy-right p{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+/* 2. Footer section ends. */
+
+/* 3.Fenix insights section starts. */
+.home-insights{
+  background: url("../public/assets/6_fenix_insight_tablet_screen.jpg");
+  background-position: 50%;
+  background-position-x: center;
+  background-size: cover;
+  margin: auto;
+  max-width: 2200px;
+  min-height: 700px;
+  position: relative;
+  top: 0;
+}
+.insight-content{
+  top: 200px;
+  left: 200px;
+}
+/* 3.Fenix insights section ends. */
+
+/* 4. Pro trail section starts. */
+.pro-select{
+  display: block;
+    width: 25%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin: 0 auto;
+    outline: none;
+}
+.pro-trail{
+  background: #1160b5;
+}
+.pro-trail-cards{
+  background-color: #fff;
+  min-height: 630px;
+}
+.pro-btn{
+  background-color: var(--color-2-);
+  border: 1px solid #fff;
+  box-shadow: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+.pro-second-btn{
+  background: var(--color-2-);
+  border: 1px solid #fff;
+  width: 75%;
+  margin: 15px 0;
+  height: 38px;
+  border-radius: 4px;
+  color: #fff;
+}
+.pro-list-items{
+  gap: 10px;
+  padding: 6px 0;
+}
+.pro-list-items i{
+  color: #f70;
+}
+.pro-list-items li{
+  font-size: 14px;
+  font-weight: 600;
+  color: #616161;
+}
+.pro-annual-btn{
+  background-color: transparent;
+}
+.pro-user-select{
+  width: 130px;
+  height: 35px;
+  border: 1px solid #c9bcbc;
+  border-radius: 4px;
+  padding: 0px 10px;
+}
+.pricing-title h5{
+  color: #002a7d;
+  font-weight: 600;
+}
+.pricing-card-1{
+ text-align: center;
+border-radius: 10px;
+box-shadow: 0 0px 20px rgb(0 0 0 / 15%);
+margin-bottom: 30px;
+background-color: #ffffff;
+cursor: pointer;
+transition: all 500ms ease;
+min-height: 200px;
+}
+.pricing-card-1:hover{
+  background-color: #0087ff;
+  color: #fff;
+}
+.pricing-card-1:hover h6{
+  color: #fff;
+}
+.pricing-card-1 h6{
+  color: #0087ff;
+  font-weight: 500;
+}
+.pricing-tables-1{
+  background: #ffffff;
+  padding: 25px 50px 25px 70px;
+  border-radius: 10px;
+  box-shadow: 0 0px 20px rgb(0 0 0 / 15%);
+  margin-bottom: 10px;
+  min-height: 200px;
+}
+.table-1{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+/* 4. Pro trail section ends. */
+
+/* 6. Charts section starts */
+.charts{
+  background: #1160b5;
+  position: relative;
+  z-index: +9;
+  width: 100%;
+}
+/* 6. Charts section ends */
+
+
+/* 8. back to top section starts. */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  background-color: #fff;
+  color: var(--color-1-);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* 8. back to top section ends. */
+
+/* 9. Why choose us section starts. */
+.choose-us{
+  background-image: url("../public/assets/shape-18.png");
+}
+.why-choose-us{
+  background: -webkit-linear-gradient(45deg, #001a9e, #03103d 100%);
+  position: relative;
+}
+.choose-us-cards{
+  background: rgba(255,255,255,0.1);
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+.shape{
+  background-image: url("../public/assets/icons-shape-1.png");
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 110px;
+  height: 110px;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+.choose-card-image{
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  width: 110px;
+  height: 110px;
+  line-height: 110px;
+  text-align: center;
+  border-top-right-radius: 10px;
+  background-color: #ffffff;
+  z-index: 1;
+}
+.choose-card-image::before{
+  position: absolute;
+    content: '';
+    width: 110px;
+    height: 110px;
+    left: 0px;
+    top: 0px;
+    background-color: #fff;
+    border-top-right-radius: 10px;
+    z-index: -1;
+}
+.choose-cards-text{
+  margin-left: 35%;
+}
+.choose-cards-text h5{
+  position: relative;
+}
+.choose-cards-text h5::before{
+  position: absolute;
+  content: '';
+  background-color: #ffffff;
+  width: 45px;
+  height: 2px;
+  left: 0px;
+  bottom: -10px;
+}
+.choose-text h5{
+  font-size: 14px;
+  font-weight: 600;
+}
+.choose-text p{
+  font-size: 14px;
+  line-height: 30px;
+}
+/* 9. Why choose us section ends. */
+
+/* 10. About us section starts.  */
+.about-image{
+  will-change: transform;
+  transform: perspective(700px) rotateX(0deg) rotateY(0deg);
+}
+.about-image:hover{
+  transform: perspective(700px) rotateX(4.6deg) rotateY(-7.6deg);
+}
+.about-content h6{
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: #002a7d;
+}
+.about-content h2{
+  font-size: 32px;
+  font-weight: 700;
+}
+.about-btn{
+  padding: 8px 18px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.4s;
+}
+.about-btn:hover{
+  background-color: transparent;
+  color: var(--color-2-);
+  border: 1px solid var(--color-1-);
+}
+/* 10. About us section ends.  */
+
+/* 11. Blogs section starts. */
+.blogs-section{
+  background-image: url("../public/assets/shape-20.png");
+}
+.blog-card-content h2{
+  font-size: 22px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+.blog-card-content a{
+  color: var(--color-2-);
+  font-size: 14px;
+  font-weight: 600;
+}
+.blog-card:hover{
+  box-shadow: 0 5px 30px rgb(0 0 0 / 10%);
+}
+/* 11. Blogs section ends. */
+
+
+@media(max-width: 1200px){
+  .pro-trail-cards {
+    min-height: 700px;
   }
-  to {
-    transform: rotate(360deg);
+  .head-section p {
+    font-size: 16px;
+  }
+  .footer-images img{
+    width: 100%;
+  }
+}
+
+@media(max-width: 1023px){
+  .head-image img{
+    display: none;
+  }
+  .real-cards img {
+    width: 100%;
+  }
+  .pro-trail-cards {
+    min-height: 630px;
+  }
+  .pro-free-last{
+    min-height: 400px;
+  }
+  .insight-content {
+    left: 50px;
+  }
+  .nav-links{
+    flex-direction: column;
+    position: absolute;
+    z-index: +99999;
+    left: 0;
+    background: #3176c0;
+    width: 100%;
+    top: 17%;
+    padding: 10px;
+    gap: 11px;
+  }
+  .nav-hamburger{
+    display: block;
+    color: #fff;
+  }
+  .nav-hamburger i{
+    font-size: 30px;
+  }
+  .navigation-tabs{
+    display: none !important;
+  }
+}
+
+@media(max-width: 767px){
+  .pro-select {
+    width: 100%;
+  }
+  .footer-links li{
+    border: none;
+  }
+  .pro-second-card{
+    min-height: 350px;
+  }
+  .insight-content {
+    left: 13px;
+  }
+  .head-icons{
+    flex-direction: inherit;
+  }
+  .choose-cards-text {
+    margin-top: 65%;
+    margin-left: 0%;
+  }
+  .pricing-tables-1{
+    padding: 25px;
+  }
+  .table-1{
+    grid-template-columns: auto;
+  }
+  .copy-right-content{
+    flex-direction: column;
+    gap: 20px;
   }
 }
